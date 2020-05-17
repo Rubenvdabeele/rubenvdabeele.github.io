@@ -28,7 +28,8 @@ body {
 }
 
 #logo-rvda{
-	width: 480px;
+	max-width: 480px;
+	width: 100%;
 }
 
 #content{
