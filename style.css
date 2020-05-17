@@ -1,0 +1,87 @@
+html {
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+	margin: 0;
+	word-wrap: break-word;
+	min-height: 100%;
+	font-family: 'Roboto Mono', monospace;
+}
+
+.container {
+	margin: 0;
+	display: grid;
+	grid-template-columns: 100%;
+	width: 100%;
+	height: 100%;
+	color: #000000e3;
+}
+
+#header{
+	grid-row-start: 1;
+	grid-row-end: 1;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 40px;
+}
+
+#logo-rvda{
+	width: 480px;
+}
+
+#content{
+	grid-column-start: 1;
+	grid-column-end: 4;
+	padding-left: 10%;
+	padding-right: 10%;
+	font-size: 16px;
+}
+
+.content-field{
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: min-content auto;
+}
+
+.content-field-title{
+	font-size: 125%;
+	text-align: center;
+	border-bottom: 1px groove black;
+	margin-bottom: 30px;
+}
+
+.emphasis{
+	color: #ff2191;
+}
+
+.entry{
+	padding-bottom: 45px;
+}
+
+#footer{
+	display: grid;
+	width: 100%;
+	grid-template-columns: 30% 1fr 1fr 30%;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+#footer img{
+	height: 40px;
+}
+
+#footer #github {
+	grid-row-start: 1;
+	grid-row-end: 1;
+	grid-column-start: 2;
+	grid-column-end: 3;
+}
+
+#footer #linkedin {
+	grid-row-start: 1;
+	grid-row-end: 1;
+	grid-column-start: 3;
+	grid-column-end: 4;
+}
