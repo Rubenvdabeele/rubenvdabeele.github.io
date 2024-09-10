@@ -14,17 +14,31 @@
 	</head>
 
 	<body>
-			<iframe id="presentation" src="https://docs.google.com/presentation/d/1wydI-axUi28iRcEd8ouvw1ie5bRHrGW4vNc-L95gMP8/embed?start=true&loop=true&delayms=15000" frameborder="0" width="1280" height="1736" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+			<iframe id="pLeft" src="https://docs.google.com/presentation/d/1wydI-axUi28iRcEd8ouvw1ie5bRHrGW4vNc-L95gMP8/embed?start=true&loop=true&delayms=15000" frameborder="0" width="1280" height="1736" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+			<iframe id="pRight" src="https://docs.google.com/presentation/d/1wydI-axUi28iRcEd8ouvw1ie5bRHrGW4vNc-L95gMP8/embed?start=true&loop=true&delayms=15000" frameborder="0" width="1280" height="1736" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>			
 	</body>
 	<script>
-		var pres = document.getElementById("presentation");
-		
-		pres.addEventListener("load", function() {
+		var pLeft = document.getElementById("pLeft");
+		var pRight = document.getElementById("pRight");
+
+		var width = window.innerWidth;		
+		var height = window.height;
+
+		pLeft.width = width/2;
+		pLeft.height = height;
+
+		pRight.width = width/2;
+		pRight.height = height;
+
+
+		pLeft.style.left = "0px";
+		pRight.style.left = width/2 + "px";
+
+		/*pLeft.addEventListener("load", function() {
 			var width = window.innerWidth; 
-			pres.width = width; 
-			var height = window.height; 
-			pres.height = height;
-		});
+			pLeft.width = width; 
+			pLeft.height = height;
+		});*/
 
 	</script>
 </html>

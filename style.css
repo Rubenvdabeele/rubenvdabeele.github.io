@@ -13,7 +13,7 @@ body {
 
 }
 
-#presentation{
+#pLeft, #pRight{
 	position: absolute;
 	height: 100%;
 }
